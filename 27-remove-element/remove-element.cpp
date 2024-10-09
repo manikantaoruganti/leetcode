@@ -6,10 +6,8 @@ public:
             if(nums[j]!=val){
                 nums[i]=nums[j];
                 i=i+1;
-                
             }
-        }
-        return i;
+        }return i;
         
     }
 };
