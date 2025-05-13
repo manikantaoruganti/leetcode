@@ -1,8 +1,14 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        for i in range(0,len(nums)):
-            for j in range(i+1,len(nums)):
-                if nums[j]==target-nums[i]:
-                    return {i,j}
-        
-        
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        seen = {}
+        for i, num in enumerate(nums):
+            complement = target - num
+            if complement in seen:
+                return [seen[complement], i]
+            seen[num] = i
+        return []  # The problem guarantees one valid solution
