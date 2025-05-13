@@ -12,18 +12,16 @@
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> ans;
-        inorder(root , ans);
-        return ans;
+        vector<int> result;
+        inorderHelper(root, result);
+        return result;
     }
-     private:
-         void inorder(TreeNode* root,vector<int>& ans){
-             if(root == nullptr)
-             return ;
-             inorder(root->left,ans);
-             ans.push_back(root->val);
-             inorder(root->right,ans);
-         
-        
+    
+private:
+    void inorderHelper(TreeNode* node, vector<int>& result) {
+        if (node == nullptr) return;
+        inorderHelper(node->left, result);  
+        result.push_back(node->val);           
+        inorderHelper(node->right, result);   
     }
 };
