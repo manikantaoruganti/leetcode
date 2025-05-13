@@ -4,12 +4,15 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    for(var i=0;i<nums.length;i++){
-        for(var j=i+1;j<nums.length;j++){
-            if(nums[j] == target - nums[i]){
-                return [i,j];
-            }
+    const seen = new Map();
+
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target - nums[i];
+        if (seen.has(complement)) {
+            return [seen.get(complement), i];
         }
+        seen.set(nums[i], i);
     }
-    throw new Error("no match found");
+
+    return [];
 };
