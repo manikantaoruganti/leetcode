@@ -4,10 +4,9 @@
 int* countBits(int n, int* returnSize) {
     *returnSize = n + 1;
     int* ans = (int*)malloc((n + 1) * sizeof(int));
-    ans[0] = 0;
 
-    for (int i = 1; i <= n; i++) {
-        ans[i] = ans[i >> 1] + (i & 1);
+    for (int i = 0; i <= n; i++) {
+        ans[i] = __builtin_popcount(i); // Using GCC's built-in popcount function
     }
 
     return ans;
