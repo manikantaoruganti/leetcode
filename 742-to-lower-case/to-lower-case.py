@@ -1,8 +1,4 @@
-class Solution(object):
-    def toLowerCase(self, s):
+class Solution:
+    def toLowerCase(self, s: str) -> str:
         return s.lower()
-        """
-        :type s: str
-        :rtype: str
-        """
         
