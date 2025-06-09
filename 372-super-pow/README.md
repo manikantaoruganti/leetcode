@@ -18,7 +18,7 @@
 <p><strong class="example">Example 3:</strong></p>
 
 <pre>
-<strong>Input:</strong> a = 1, b = [4,3,3,8,5,2]
+<strong>Input:</strong> a = 1, b =     [4,3,3,8,5,2]
 <strong>Output:</strong> 1
 </pre>
 
