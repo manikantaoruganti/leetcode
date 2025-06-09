@@ -21,7 +21,7 @@
 <p><strong>Input:</strong> <span class="example-io">k = 5</span></p>
 
 <p><strong>Output:</strong> <span class="example-io">&quot;b&quot;</span></p>
-
+   
 <p><strong>Explanation:</strong></p>
 
 <p>Initially, <code>word = &quot;a&quot;</code>. We need to do the operation three times:</p>
