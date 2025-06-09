@@ -18,7 +18,7 @@
 <strong>Output:</strong> 2
 <strong>Explanation:</strong> 1 is in the array but 2 is missing.
 </pre>
-
+      
 <p><strong class="example">Example 3:</strong></p>
 
 <pre>
