@@ -24,7 +24,7 @@
 
 <p><img alt="" src="https://assets.leetcode.com/uploads/2024/08/29/tree_2.png" style="width: 350px; height: 286px;" /></p>
 </div>
-
+  
 <p><strong class="example">Example 3:</strong></p>
 
 <div class="example-block">
