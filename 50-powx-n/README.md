@@ -17,7 +17,7 @@
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre>
+<pre>.  
 <strong>Input:</strong> x = 2.00000, n = -2
 <strong>Output:</strong> 0.25000
 <strong>Explanation:</strong> 2<sup>-2</sup> = 1/2<sup>2</sup> = 1/4 = 0.25
